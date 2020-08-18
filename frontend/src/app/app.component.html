@@ -1,2 +1,7 @@
-
+<h1>Result</h1>
+<form [formGroup]="numbers" (ngSubmit)="onSubmit()">
+  <input type ="text" formControlName="num1" placeholder="Enter num1">
+  <input type="text" formControlName="num2" placeholder="Enter num2">
+  <button type="submit" [disabled]="!numbers.valid">Give me result</button>
+</form>
 <router-outlet></router-outlet>
