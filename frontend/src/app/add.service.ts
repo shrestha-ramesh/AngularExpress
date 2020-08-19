@@ -7,7 +7,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class AddService {
  
-  url = '';
+  url = 'http://localhost:5000/';
   constructor(private http: HttpClient) { }
 
   result(formgroup: FormGroup){
